@@ -1,0 +1,19 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="turboGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3366" />
+      <stop offset="100%" stop-color="#9d00ff" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="100" fill="rgba(255,51,102,0.05)" rx="12" />
+  <path d="M0 100 L120 0 L400 0 L400 100 Z" fill="rgba(255,51,102,0.03)" />
+  
+  <text x="20" y="40" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="url(#turboGrad)">TURBO 30S</text>
+  <text x="20" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#a3a3a3">FLASH GAME • INSTANT RESULTS</text>
+  
+  <g transform="translate(320, 20)">
+    <path d="M20 0 L0 40 L15 40 L5 60 L25 20 L10 20 Z" fill="#ff3366">
+      <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

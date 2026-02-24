@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1a0033"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="green" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#00ff9d"/><stop offset="100%" stop-color="#004d30"/></radialGradient>
+    <radialGradient id="violet" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#cc66ff"/><stop offset="100%" stop-color="#5500aa"/></radialGradient>
+    <radialGradient id="red" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#ff6688"/><stop offset="100%" stop-color="#990022"/></radialGradient>
+  </defs>
+
+  <rect width="200" height="200" fill="url(#bg)" rx="20"/>
+
+  <!-- Glow rings -->
+  <circle cx="100" cy="90" r="75" fill="none" stroke="#9d00ff" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="4 4"/>
+  <circle cx="100" cy="90" r="60" fill="none" stroke="#9d00ff" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Big center green ball -->
+  <circle cx="100" cy="85" r="38" fill="#004d30" fill-opacity="0.4" filter="url(#glow)"/>
+  <circle cx="100" cy="85" r="34" fill="url(#green)"/>
+  <circle cx="88" cy="71" r="10" fill="white" fill-opacity="0.22"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial Black" font-size="22" font-weight="900" fill="white" filter="url(#glow)" fill-opacity="0.5">G</text>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial Black" font-size="22" font-weight="900" fill="white">G</text>
+
+  <!-- Left violet ball -->
+  <circle cx="44" cy="120" r="22" fill="#5500aa" fill-opacity="0.4" filter="url(#glow)"/>
+  <circle cx="44" cy="120" r="19" fill="url(#violet)"/>
+  <circle cx="36" cy="112" r="6" fill="white" fill-opacity="0.2"/>
+  <text x="44" y="127" text-anchor="middle" font-family="Arial Black" font-size="13" fill="white">V</text>
+
+  <!-- Right red ball -->
+  <circle cx="156" cy="120" r="22" fill="#990022" fill-opacity="0.4" filter="url(#glow)"/>
+  <circle cx="156" cy="120" r="19" fill="url(#red)"/>
+  <circle cx="148" cy="112" r="6" fill="white" fill-opacity="0.2"/>
+  <text x="156" y="127" text-anchor="middle" font-family="Arial Black" font-size="13" fill="white">R</text>
+
+  <!-- Label -->
+  <text x="100" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#a3a3a3" letter-spacing="3">PREDICT &amp; WIN</text>
+
+  <!-- Dots -->
+  <circle cx="100" cy="180" r="3" fill="#9d00ff" filter="url(#glow)"/>
+  <circle cx="115" cy="180" r="2" fill="#00ff9d"/>
+  <circle cx="85" cy="180" r="2" fill="#ff3366"/>
+</svg>

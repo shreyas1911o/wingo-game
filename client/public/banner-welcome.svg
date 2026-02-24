@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E0A0A"/>
+      <stop offset="50%" style="stop-color:#2D1408"/>
+      <stop offset="100%" style="stop-color:#3D1A00"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B6914"/>
+      <stop offset="50%" style="stop-color:#D4A017"/>
+      <stop offset="100%" style="stop-color:#F5C842"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#D4A017;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#D4A017;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="240" fill="url(#bg1)"/>
+  <!-- Glow orb -->
+  <ellipse cx="400" cy="120" rx="300" ry="140" fill="url(#glow1)"/>
+  <!-- Mandala left -->
+  <g transform="translate(80,120)" opacity="0.18">
+    <circle r="70" fill="none" stroke="#D4A017" stroke-width="1"/>
+    <circle r="50" fill="none" stroke="#D4A017" stroke-width="0.7"/>
+    <circle r="30" fill="none" stroke="#D4A017" stroke-width="0.7"/>
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="-49" y1="-49" x2="49" y2="49" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="49" y1="-49" x2="-49" y2="49" stroke="#D4A017" stroke-width="0.5"/>
+    <polygon points="0,-70 17,-24 66,-22 28,10 41,59 0,33 -41,59 -28,10 -66,-22 -17,-24" fill="none" stroke="#D4A017" stroke-width="0.6"/>
+  </g>
+  <!-- Mandala right -->
+  <g transform="translate(720,120)" opacity="0.18">
+    <circle r="70" fill="none" stroke="#D4A017" stroke-width="1"/>
+    <circle r="50" fill="none" stroke="#D4A017" stroke-width="0.7"/>
+    <circle r="30" fill="none" stroke="#D4A017" stroke-width="0.7"/>
+    <line x1="-70" y1="0" x2="70" y2="0" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="0" y1="-70" x2="0" y2="70" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="-49" y1="-49" x2="49" y2="49" stroke="#D4A017" stroke-width="0.5"/>
+    <line x1="49" y1="-49" x2="-49" y2="49" stroke="#D4A017" stroke-width="0.5"/>
+  </g>
+  <!-- Top border line -->
+  <rect x="0" y="0" width="800" height="2" fill="url(#gold1)" opacity="0.5"/>
+  <!-- Bottom border line -->
+  <rect x="0" y="238" width="800" height="2" fill="url(#gold1)" opacity="0.5"/>
+  <!-- Corner ornaments TL -->
+  <path d="M10,10 L10,45 M10,10 L45,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Corner ornaments TR -->
+  <path d="M790,10 L790,45 M790,10 L755,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Corner ornaments BL -->
+  <path d="M10,230 L10,195 M10,230 L45,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Corner ornaments BR -->
+  <path d="M790,230 L790,195 M790,230 L755,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Lotus petals top center -->
+  <g transform="translate(400,30)" opacity="0.5">
+    <ellipse cx="-30" cy="0" rx="10" ry="18" fill="#D4A017" opacity="0.3" transform="rotate(-30,-30,0)"/>
+    <ellipse cx="0" cy="-5" rx="10" ry="20" fill="#D4A017" opacity="0.4"/>
+    <ellipse cx="30" cy="0" rx="10" ry="18" fill="#D4A017" opacity="0.3" transform="rotate(30,30,0)"/>
+  </g>
+  <!-- Main title -->
+  <text x="400" y="95" font-family="Georgia, serif" font-size="42" font-weight="900" text-anchor="middle" fill="url(#gold1)" letter-spacing="4">WINGO</text>
+  <!-- Divider line -->
+  <line x1="200" y1="112" x2="600" y2="112" stroke="#D4A017" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="200" cy="112" r="3" fill="#D4A017" opacity="0.5"/>
+  <circle cx="600" cy="112" r="3" fill="#D4A017" opacity="0.5"/>
+  <text x="400" y="112" font-family="Georgia, serif" font-size="9" text-anchor="middle" fill="#D4A017" opacity="0.6" letter-spacing="6">✦ ✦ ✦</text>
+  <!-- Subtitle -->
+  <text x="400" y="148" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#FDF6E3" letter-spacing="2">Aapka Swagat Hai</text>
+  <!-- English sub -->
+  <text x="400" y="174" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#D4A017" opacity="0.7" letter-spacing="3">COLOUR PREDICTION • JEETO ASAAN</text>
+  <!-- Bottom decorative diamonds -->
+  <text x="400" y="210" font-family="Arial" font-size="10" text-anchor="middle" fill="#D4A017" opacity="0.4" letter-spacing="8">◆ ◆ ◆ ◆ ◆</text>
+</svg>

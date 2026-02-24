@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d001a"/>
+      <stop offset="100%" stop-color="#00050d"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bigGlow"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+
+  <rect width="360" height="160" fill="url(#bg)" rx="14"/>
+
+  <!-- Glow orbs background -->
+  <circle cx="60" cy="80" r="50" fill="#9d00ff" fill-opacity="0.08" filter="url(#bigGlow)"/>
+  <circle cx="300" cy="80" r="50" fill="#00ff9d" fill-opacity="0.06" filter="url(#bigGlow)"/>
+
+  <!-- Left: person/user icon -->
+  <circle cx="55" cy="55" r="22" fill="none" stroke="#9d00ff" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="55" cy="48" r="12" fill="#9d00ff" fill-opacity="0.3"/>
+  <ellipse cx="55" cy="80" rx="20" ry="12" fill="#9d00ff" fill-opacity="0.2"/>
+  <circle cx="55" cy="48" r="10" fill="#9d00ff" fill-opacity="0.5" filter="url(#glow)"/>
+
+  <!-- Star burst top right of icon -->
+  <text x="75" y="35" font-size="12" fill="#ffd700" filter="url(#glow)">✦</text>
+
+  <!-- Text block -->
+  <text x="95" y="42" font-family="Arial, sans-serif" font-size="8" fill="#a3a3a3" letter-spacing="3">JOIN THE GAME</text>
+  <text x="93" y="72" font-family="Arial Black, sans-serif" font-size="24" font-weight="900">
+    <tspan fill="white">Create </tspan><tspan fill="#9d00ff" filter="url(#glow)">Account</tspan>
+  </text>
+  <text x="95" y="92" font-family="Arial, sans-serif" font-size="10" fill="#a3a3a3">Start winning in seconds</text>
+
+  <!-- Step indicators -->
+  <g transform="translate(95, 108)">
+    <circle cx="12" cy="12" r="12" fill="#9d00ff" fill-opacity="0.2" stroke="#9d00ff" stroke-width="1"/>
+    <text x="12" y="17" text-anchor="middle" font-family="Arial Black" font-size="10" fill="#cc66ff">1</text>
+    <line x1="24" y1="12" x2="52" y2="12" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3 3"/>
+    <circle cx="64" cy="12" r="12" fill="#9d00ff" fill-opacity="0.15" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="64" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="#808080">2</text>
+    <line x1="76" y1="12" x2="104" y2="12" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="3 3"/>
+    <circle cx="116" cy="12" r="12" fill="#9d00ff" fill-opacity="0.1" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="116" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="#606060">3</text>
+    <text x="12" y="36" text-anchor="middle" font-family="Arial" font-size="7" fill="#cc66ff">Register</text>
+    <text x="64" y="36" text-anchor="middle" font-family="Arial" font-size="7" fill="#606060">Deposit</text>
+    <text x="116" y="36" text-anchor="middle" font-family="Arial" font-size="7" fill="#505050">Win!</text>
+  </g>
+
+  <!-- Right decoration -->
+  <circle cx="315" cy="60" r="18" fill="#00ff9d" fill-opacity="0.1" stroke="#00ff9d" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="315" y="67" text-anchor="middle" font-size="18">🎯</text>
+  <circle cx="338" cy="100" r="12" fill="#9d00ff" fill-opacity="0.1" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="338" y="107" text-anchor="middle" font-size="12">💰</text>
+  <circle cx="295" cy="105" r="10" fill="#ffd700" fill-opacity="0.1" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="295" y="112" text-anchor="middle" font-size="10">🏆</text>
+</svg>

@@ -1,0 +1,344 @@
+@import "tailwindcss";
+
+/*
+  Indian Royal Luxury Design System
+  Inspired by Mughal architecture, Rajasthani art, temple gold filigree & silk saris
+*/
+
+:root {
+  /* ── Core Palette ── */
+  --color-background: #120608;
+  /* Deep royal maroon-black */
+  --color-foreground: #FDF6E3;
+  /* Warm ivory */
+
+  --color-card: #1E0A0A;
+  /* Dark burgundy */
+  --color-card-foreground: #FDF6E3;
+
+  --color-popover: #200C0C;
+  --color-popover-foreground: #FDF6E3;
+
+  --color-primary: #D4A017;
+  /* 24-karat saffron gold */
+  --color-primary-foreground: #1a0800;
+
+  --color-secondary: #1A6B3C;
+  /* Rich emerald */
+  --color-secondary-foreground: #FDF6E3;
+
+  --color-destructive: #B22222;
+  /* Deep crimson */
+  --color-destructive-foreground: #FDF6E3;
+
+  --color-muted: #2D1408;
+  /* Burnt sienna dark */
+  --color-muted-foreground: #A07850;
+  /* Warm tawny */
+
+  --color-accent: #2D1A00;
+  --color-accent-foreground: #D4A017;
+
+  --color-border: rgba(212, 160, 23, 0.28);
+  --color-input: rgba(212, 160, 23, 0.15);
+  --color-ring: #D4A017;
+
+  /* ── Glass / Translucent Surfaces ── */
+  --color-glass-bg: rgba(212, 160, 23, 0.06);
+  --color-glass-border: rgba(212, 160, 23, 0.2);
+  --color-glass-hover: rgba(212, 160, 23, 0.12);
+
+  /* ── Extended Luxury Tokens ── */
+  --gold: #D4A017;
+  --gold-light: #F5C842;
+  --gold-dark: #8B6914;
+  --crimson: #B22222;
+  --emerald: #1A6B3C;
+  --ivory: #FDF6E3;
+  --maroon: #120608;
+  --burgundy: #2D0E0E;
+  --saffron: #FF6700;
+
+  /* ── Typography ── */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", "Inter", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+}
+
+/* ── Light mode overrides ── */
+:root.light {
+  --color-background: #FDF6E3;
+  --color-foreground: #2D0E0E;
+  --color-card: #FFF8EC;
+  --color-card-foreground: #2D0E0E;
+  --color-muted: #F5E8C8;
+  --color-muted-foreground: #7A4F2E;
+  --color-border: rgba(212, 160, 23, 0.35);
+  --color-glass-bg: rgba(212, 160, 23, 0.08);
+  --color-glass-border: rgba(212, 160, 23, 0.25);
+  --color-glass-hover: rgba(212, 160, 23, 0.14);
+}
+
+/* ═══════════════════════════════════════
+   KEYFRAMES — Indian Luxury Motion
+═══════════════════════════════════════ */
+
+/* Gold shimmer sweep */
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Slow mandala / sun-wheel rotation */
+@keyframes mandala-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Diya flame flicker */
+@keyframes diya-flicker {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 6px #D4A017) drop-shadow(0 0 14px #FF6700);
+    opacity: 0.9;
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px #D4A017) drop-shadow(0 0 30px #FF6700);
+    opacity: 1;
+  }
+}
+
+/* Pulse glow (gold) */
+@keyframes pulse-glow-gold {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px #D4A017);
+    opacity: 0.8;
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px #D4A017);
+    opacity: 1;
+  }
+}
+
+/* Floating */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Shimmer shift for text */
+@keyframes text-shimmer-shift {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ═══════════════════════════════════════
+   BASE STYLES
+═══════════════════════════════════════ */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* ═══════════════════════════════════════
+   SCROLLBAR — Gold on Maroon
+═══════════════════════════════════════ */
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-muted);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gold-dark);
+    border-radius: 3px;
+    border: 1px solid var(--color-background);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+  }
+}
+
+/* ═══════════════════════════════════════
+   ANIMATION UTILITIES
+═══════════════════════════════════════ */
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.animate-diya-flicker {
+  animation: diya-flicker 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow-gold 2.5s ease-in-out infinite;
+}
+
+.animate-mandala {
+  animation: mandala-rotate 60s linear infinite;
+}
+
+/* ═══════════════════════════════════════
+   GOLD SHIMMER TITLE
+═══════════════════════════════════════ */
+.bg-branding-gradient {
+  background: linear-gradient(90deg,
+      #D4A017 0%,
+      #F5C842 25%,
+      #FF6700 50%,
+      #F5C842 75%,
+      #D4A017 100%);
+  background-size: 200% auto;
+  animation: gold-shimmer 4s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.animate-text-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-text-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.2), transparent);
+  animation: text-shimmer-shift 3s infinite;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════
+   MANDALA BACKGROUND PATTERN
+   Replaces old .bg-cyber-grid  
+═══════════════════════════════════════ */
+.bg-mandala-pattern {
+  background-image:
+    radial-gradient(circle, rgba(212, 160, 23, 0.06) 1px, transparent 1px),
+    radial-gradient(circle, rgba(212, 160, 23, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px, 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* ═══════════════════════════════════════
+   ORNATE CARD  
+═══════════════════════════════════════ */
+.ornate-card {
+  background: var(--color-card);
+  border: 1px solid rgba(212, 160, 23, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(212, 160, 23, 0.05),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(212, 160, 23, 0.1);
+  border-radius: 16px;
+}
+
+/* Gold ornate border utility */
+.border-gold-ornate {
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  box-shadow: 0 0 12px rgba(212, 160, 23, 0.08), inset 0 1px 0 rgba(212, 160, 23, 0.12);
+}
+
+/* Gold text shimmer */
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #D4A017, #F5C842, #D4A017);
+  background-size: 200% auto;
+  animation: gold-shimmer 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Luxury section label */
+.label-luxury {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.75;
+}
+
+/* Gold glow button */
+.btn-gold {
+  background: linear-gradient(135deg, #D4A017 0%, #8B6914 50%, #D4A017 100%);
+  background-size: 200% auto;
+  color: #1a0800;
+  font-weight: 800;
+  transition: background-position 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(212, 160, 23, 0.3);
+}
+
+.btn-gold:hover {
+  background-position: right center;
+  box-shadow: 0 6px 28px rgba(212, 160, 23, 0.5);
+}
+
+/* Lotus divider */
+.lotus-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(212, 160, 23, 0.4);
+  font-size: 0.65rem;
+}
+
+.lotus-divider::before,
+.lotus-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.35), transparent);
+}

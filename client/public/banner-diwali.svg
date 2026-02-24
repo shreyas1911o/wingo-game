@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A0806"/>
+      <stop offset="40%" style="stop-color:#241008"/>
+      <stop offset="100%" style="stop-color:#3D1A00"/>
+    </linearGradient>
+    <linearGradient id="gold9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B6914"/>
+      <stop offset="50%" style="stop-color:#D4A017"/>
+      <stop offset="100%" style="stop-color:#F5C842"/>
+    </linearGradient>
+    <radialGradient id="glow9" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D4A017;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#D4A017;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="240" fill="url(#bg9)"/>
+  <ellipse cx="400" cy="120" rx="380" ry="150" fill="url(#glow9)"/>
+  <!-- Diya lamps -->
+  <g opacity="0.7">
+    <!-- Left diya -->
+    <g transform="translate(90,135)">
+      <ellipse cx="0" cy="10" rx="28" ry="10" fill="#D4A017" opacity="0.4"/>
+      <path d="M-25,10 Q0,-5 25,10 Q15,20 0,22 Q-15,20 -25,10Z" fill="#E8820C" opacity="0.8"/>
+      <ellipse cx="0" cy="8" rx="18" ry="7" fill="#F5A623" opacity="0.6"/>
+      <!-- Flame -->
+      <path d="M0,8 Q-5,-5 0,-18 Q5,-5 0,8Z" fill="#FFF176" opacity="0.9"/>
+      <path d="M0,8 Q-3,-2 0,-12 Q3,-2 0,8Z" fill="#FF8F00" opacity="0.7"/>
+      <!-- Glow -->
+      <circle cx="0" cy="-10" r="15" fill="#FFF59D" opacity="0.12"/>
+    </g>
+    <!-- Center diya big -->
+    <g transform="translate(400,130)">
+      <ellipse cx="0" cy="12" rx="35" ry="12" fill="#D4A017" opacity="0.5"/>
+      <path d="M-30,12 Q0,-8 30,12 Q18,25 0,28 Q-18,25 -30,12Z" fill="#E8820C" opacity="0.9"/>
+      <ellipse cx="0" cy="10" rx="22" ry="8" fill="#F5A623" opacity="0.7"/>
+      <path d="M0,10 Q-7,-8 0,-28 Q7,-8 0,10Z" fill="#FFF176"/>
+      <path d="M0,10 Q-4,-3 0,-18 Q4,-3 0,10Z" fill="#FF8F00" opacity="0.8"/>
+      <circle cx="0" cy="-15" r="22" fill="#FFF59D" opacity="0.15"/>
+    </g>
+    <!-- Right diya -->
+    <g transform="translate(710,135)">
+      <ellipse cx="0" cy="10" rx="28" ry="10" fill="#D4A017" opacity="0.4"/>
+      <path d="M-25,10 Q0,-5 25,10 Q15,20 0,22 Q-15,20 -25,10Z" fill="#E8820C" opacity="0.8"/>
+      <ellipse cx="0" cy="8" rx="18" ry="7" fill="#F5A623" opacity="0.6"/>
+      <path d="M0,8 Q-5,-5 0,-18 Q5,-5 0,8Z" fill="#FFF176" opacity="0.9"/>
+      <path d="M0,8 Q-3,-2 0,-12 Q3,-2 0,8Z" fill="#FF8F00" opacity="0.7"/>
+      <circle cx="0" cy="-10" r="15" fill="#FFF59D" opacity="0.12"/>
+    </g>
+  </g>
+  <!-- Rangoli pattern bottom -->
+  <g transform="translate(400,220)" opacity="0.18">
+    <circle r="30" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <circle r="18" fill="none" stroke="#E74C3C" stroke-width="1"/>
+    <circle r="8" fill="#D4A017" opacity="0.5"/>
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#D4A017" stroke-width="0.8"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#D4A017" stroke-width="0.8"/>
+  </g>
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="2" fill="url(#gold9)" opacity="0.6"/>
+  <rect x="0" y="238" width="800" height="2" fill="url(#gold9)" opacity="0.6"/>
+  <path d="M10,10 L10,45 M10,10 L45,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M790,10 L790,45 M790,10 L755,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M10,230 L10,195 M10,230 L45,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M790,230 L790,195 M790,230 L755,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="400" y="48" font-family="Georgia, serif" font-size="38" font-weight="900" text-anchor="middle" fill="url(#gold9)" letter-spacing="4">DIWALI OFFER</text>
+  <line x1="160" y1="60" x2="640" y2="60" stroke="#D4A017" stroke-width="0.7" opacity="0.35"/>
+  <text x="400" y="88" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#FDF6E3">Roshan Karo Apna Naseeb!</text>
+  <text x="400" y="112" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#D4A017" opacity="0.7" letter-spacing="1">Diwali Special: Double Bonus on Every Deposit</text>
+</svg>

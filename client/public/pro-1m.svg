@@ -1,0 +1,18 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00cc7a" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="100" fill="rgba(0,204,122,0.05)" rx="12" />
+  <path d="M0 100 L120 0 L400 0 L400 100 Z" fill="rgba(0,204,122,0.03)" />
+  
+  <text x="20" y="40" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="url(#proGrad)">PRO 1 MIN</text>
+  <text x="20" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#a3a3a3">PRECISION • BALANCED SPEED</text>
+  
+  <circle cx="340" cy="50" r="25" fill="none" stroke="#00cc7a" stroke-width="2" />
+  <path d="M340 30 L340 50 L355 50" fill="none" stroke="#00cc7a" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" from="0 340 50" to="360 340 50" dur="2s" repeatCount="indefinite" />
+  </path>
+</svg>

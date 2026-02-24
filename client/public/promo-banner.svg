@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d001a"/>
+      <stop offset="100%" stop-color="#001a0d"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bigGlow"><feGaussianBlur stdDeviation="10"/></filter>
+    <radialGradient id="trophyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trophyBody" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="160" fill="url(#bg)" rx="14"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#9d00ff" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="40" x2="400" y2="40"/>
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="120" x2="400" y2="120"/>
+    <line x1="80" y1="0" x2="80" y2="160"/>
+    <line x1="160" y1="0" x2="160" y2="160"/>
+    <line x1="240" y1="0" x2="240" y2="160"/>
+    <line x1="320" y1="0" x2="320" y2="160"/>
+  </g>
+
+  <!-- Trophy glow -->
+  <circle cx="60" cy="80" r="55" fill="url(#trophyGlow)" filter="url(#bigGlow)"/>
+
+  <!-- Trophy -->
+  <path d="M35 45 L85 45 L85 85 Q85 105 60 110 Q35 105 35 85 Z" fill="url(#trophyBody)" filter="url(#glow)"/>
+  <rect x="52" y="108" width="16" height="14" fill="#b8860b"/>
+  <rect x="44" y="120" width="32" height="6" rx="3" fill="#ffd700"/>
+  <!-- Trophy handles -->
+  <path d="M35 50 Q20 50 20 65 Q20 78 35 78" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
+  <path d="M85 50 Q100 50 100 65 Q100 78 85 78" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
+  <!-- Star on trophy -->
+  <text x="60" y="83" text-anchor="middle" font-size="20" fill="#7a4800">★</text>
+
+  <!-- Main text -->
+  <text x="120" y="55" font-family="Arial Black, sans-serif" font-size="11" fill="#a3a3a3" letter-spacing="3">WIN BIG WITH</text>
+  <text x="118" y="88" font-family="Arial Black, sans-serif" font-size="28" font-weight="900">
+    <tspan fill="#9d00ff" filter="url(#glow)">WINGO</tspan>
+  </text>
+  <text x="120" y="110" font-family="Arial, sans-serif" font-size="10" fill="#a3a3a3">Color Prediction • Real Rewards</text>
+
+  <!-- Badges -->
+  <rect x="120" y="125" width="60" height="20" rx="10" fill="#9d00ff" fill-opacity="0.2" stroke="#9d00ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="150" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#cc66ff">🎮 Play Now</text>
+
+  <rect x="190" y="125" width="70" height="20" rx="10" fill="#00ff9d" fill-opacity="0.1" stroke="#00ff9d" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="225" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#00cc7a">💰 Earn Daily</text>
+
+  <rect x="270" y="125" width="80" height="20" rx="10" fill="#ffd700" fill-opacity="0.1" stroke="#ffd700" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="310" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffd700">🏆 Top Prizes</text>
+
+  <!-- Decorative dots top right -->
+  <circle cx="350" cy="30" r="3" fill="#9d00ff" fill-opacity="0.6" filter="url(#glow)"/>
+  <circle cx="365" cy="20" r="2" fill="#00ff9d" fill-opacity="0.5" filter="url(#glow)"/>
+  <circle cx="380" cy="35" r="4" fill="#9d00ff" fill-opacity="0.3" filter="url(#glow)"/>
+  <circle cx="370" cy="45" r="2" fill="#ffd700" fill-opacity="0.6" filter="url(#glow)"/>
+</svg>

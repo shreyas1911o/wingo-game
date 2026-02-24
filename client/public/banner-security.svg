@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240">
+  <defs>
+    <linearGradient id="bga" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E1A"/>
+      <stop offset="50%" style="stop-color:#060C14"/>
+      <stop offset="100%" style="stop-color:#120608"/>
+    </linearGradient>
+    <linearGradient id="golda" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B6914"/>
+      <stop offset="50%" style="stop-color:#D4A017"/>
+      <stop offset="100%" style="stop-color:#F5C842"/>
+    </linearGradient>
+    <radialGradient id="glowa" cx="75%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#D4A017;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#D4A017;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="240" fill="url(#bga)"/>
+  <ellipse cx="600" cy="120" rx="260" ry="140" fill="url(#glowa)"/>
+  <!-- Shield security icon -->
+  <g transform="translate(620,110)" opacity="0.85">
+    <path d="M0,-65 L55,-40 L55,15 Q55,60 0,80 Q-55,60 -55,15 L-55,-40 Z" fill="#1E0A0A" stroke="#D4A017" stroke-width="2.5"/>
+    <!-- Checkmark -->
+    <polyline points="-22,10 -5,28 28,-18" stroke="#1A9B5C" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Lock icon inside -->
+    <rect x="-15" y="-30" width="30" height="22" rx="4" fill="none" stroke="#D4A017" stroke-width="1.5" opacity="0.4"/>
+    <path d="M-10,-30 Q-10,-48 0,-48 Q10,-48 10,-30" fill="none" stroke="#D4A017" stroke-width="1.5" opacity="0.4"/>
+    <!-- Stars -->
+    <text x="-70" y="-45" font-size="12" fill="#D4A017" opacity="0.5">✦</text>
+    <text x="65" y="-20" font-size="10" fill="#D4A017" opacity="0.4">✦</text>
+    <text x="60" y="55" font-size="8" fill="#D4A017" opacity="0.3">✦</text>
+  </g>
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="2" fill="url(#golda)" opacity="0.5"/>
+  <rect x="0" y="238" width="800" height="2" fill="url(#golda)" opacity="0.5"/>
+  <path d="M10,10 L10,45 M10,10 L45,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M790,10 L790,45 M790,10 L755,10" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M10,230 L10,195 M10,230 L45,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M790,230 L790,195 M790,230 L755,230" stroke="#D4A017" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="50" y="75" font-family="Arial, sans-serif" font-size="13" fill="#D4A017" opacity="0.6" letter-spacing="4">100% SECURE</text>
+  <text x="50" y="118" font-family="Georgia, serif" font-size="36" font-weight="900" fill="url(#golda)" letter-spacing="2">SURAKSHIT KHEL</text>
+  <line x1="50" y1="130" x2="430" y2="130" stroke="#D4A017" stroke-width="0.7" opacity="0.35"/>
+  <text x="50" y="156" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FDF6E3">Aapka Paisa 100% Safe Hai</text>
+  <!-- Trust badges -->
+  <g transform="translate(55,185)">
+    <rect x="0" y="0" width="100" height="24" rx="12" fill="#1A9B5C" opacity="0.15" stroke="#1A9B5C" stroke-width="1"/>
+    <text x="50" y="16" font-size="10" text-anchor="middle" fill="#1A9B5C" font-family="Arial" font-weight="bold">SSL Encrypted</text>
+  </g>
+  <g transform="translate(165,185)">
+    <rect x="0" y="0" width="100" height="24" rx="12" fill="#D4A017" opacity="0.12" stroke="#D4A017" stroke-width="1"/>
+    <text x="50" y="16" font-size="10" text-anchor="middle" fill="#D4A017" font-family="Arial" font-weight="bold">Fair Play</text>
+  </g>
+  <g transform="translate(275,185)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="#E74C3C" opacity="0.1" stroke="#E74C3C" stroke-width="1"/>
+    <text x="60" y="16" font-size="10" text-anchor="middle" fill="#E74C3C" font-family="Arial" font-weight="bold">24/7 Support</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff9d" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00ff9d" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff0055" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9d00ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9d00ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Green Ball -->
+  <g>
+    <circle cx="60" cy="100" r="30" fill="url(#greenGlow)">
+      <animate attributeName="cy" values="100;85;100" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="60" cy="100" r="15" fill="#00ff9d">
+      <animate attributeName="cy" values="100;85;100" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Red Ball -->
+  <g>
+    <circle cx="140" cy="80" r="25" fill="url(#redGlow)">
+      <animate attributeName="cy" values="80;95;80" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="r" values="25;28;25" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="140" cy="80" r="12" fill="#ff0055">
+      <animate attributeName="cy" values="80;95;80" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Violet Ball -->
+  <g>
+    <circle cx="100" cy="140" r="35" fill="url(#violetGlow)">
+      <animate attributeName="cy" values="140;125;140" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="35;40;35" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="140" r="18" fill="#9d00ff">
+      <animate attributeName="cy" values="140;125;140" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
