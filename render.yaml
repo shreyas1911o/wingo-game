@@ -15,4 +15,4 @@ services:
         value: production
       - key: FRONTEND_URL
         value: https://colorwise-wingo.web.app
-    rootDirectory: server
+    rootDir: server
